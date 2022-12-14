@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
@@ -25,6 +26,15 @@ class MainActivity : AppCompatActivity() {
         Log.i("info","Nasa poruka")
 
         Toast.makeText(this,"Poruka",Toast.LENGTH_SHORT).show()
+    }
+
+    fun topClick(v: View){
+        Toast.makeText(this,"Kliknuli ste top dugme",Toast.LENGTH_SHORT).show()
+        Log.i("info","Kliknuto je top dugme")
+    }
+    fun bottomClick(v: View){
+        Toast.makeText(this,"Kliknuli ste bottom dugme",Toast.LENGTH_SHORT).show()
+        Log.i("info","Kliknuto je bottom dugme")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
